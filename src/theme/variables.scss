@@ -2,7 +2,12 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
 :root {
+  --ion-font-family: "Jost", sans-serif;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -224,5 +229,14 @@
     --ion-toolbar-background: #1f1f1f;
 
     --ion-tab-bar-background: #1f1f1f;
+
   }
+}
+
+
+
+/** Personal **/
+ion-content.main{
+  --background: #fff url('../assets/photo-1544264747-d8af8eb09999.jpg') no-repeat center center / cover;
+ 
 }

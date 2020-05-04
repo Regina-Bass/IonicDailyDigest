@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'side',
+    loadChildren: () => import('./side/side.module').then( m => m.SidePageModule)
+  },
 ];
 
 @NgModule({

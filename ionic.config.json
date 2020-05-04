@@ -1,5 +1,7 @@
 {
   "name": "IonicDailyDigest",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

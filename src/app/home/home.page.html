@@ -1,20 +1,23 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>
-      Blank
+     Daily Digest
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content class="main">
+  <h1>Today's date is {{today | date}} </h1>
+  
+  <div class="intro">
+  
+   <p><b>Welcome to your personal Daily Digest!</b></p>
+   <p>Recommended for you:</p>
+   <a class="checkWeather" [routerLink]="[ '/side' ]">Check Weather</a>
   </div>
+
+
 </ion-content>

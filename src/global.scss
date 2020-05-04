@@ -1,26 +1,151 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
-
-/* Core CSS required for Ionic components to work properly */
-@import "~@ionic/angular/css/core.css";
-
-/* Basic CSS for apps built with Ionic */
-@import "~@ionic/angular/css/normalize.css";
-@import "~@ionic/angular/css/structure.css";
-@import "~@ionic/angular/css/typography.css";
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
 @import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
 
-/* Optional CSS utils that can be commented out */
-@import "~@ionic/angular/css/padding.css";
-@import "~@ionic/angular/css/float-elements.css";
-@import "~@ionic/angular/css/text-alignment.css";
-@import "~@ionic/angular/css/text-transformation.css";
-@import "~@ionic/angular/css/flex-utils.css";
+$custom-color: #7bcdfd;
+
+
+* {
+    color: #333;
+}
+
+.intro p{
+    color: black;
+
+}
+
+
+
+.main h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+    width: 60%;
+    margin: 120px auto;
+    text-align: center;
+    color: #fff;
+}
+
+.main > div a {
+    -webkit-box-shadow: 0px 10px 19px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 19px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 19px -9px rgba(0,0,0,0.75);
+}
+
+.main > div.intro, .main > div.details {
+    margin-bottom: 100px !important;
+}
+
+
+
+
+.main > div.intro {
+    background: #fff;
+    width: 60%;
+    padding: 40px 10px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 600px;
+   
+}
+
+/**.intro p:first-of-type{
+    margin-left: 15%;
+}
+
+.intro p{
+    margin-left: 30%;
+}**/
+
+
+.main > div.details{
+    width: 70%;
+    margin: 50px auto;
+    background: rgba(255,255,255,0.9);
+    padding: 10px;
+    border-radius: 10px;
+  
+   
+}
+
+.weather {
+    padding-bottom: 40px;
+}
+
+.weather > div {
+    text-align: center;
+    
+}
+
+.weather img {
+    width: 120px;
+}
+
+.weather div p {
+    padding: 0px;
+    margin: 0px;
+}
+.checkWeather {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    background: #0ab0fd;  /* fallback for old browsers */    
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+ion-menu-button {
+    color: #333 !important;
+}
+
+ion-input {
+ 
+    border-bottom: 1px solid $custom-color;
+    font-size: 1.2rem !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+   
+}
+.big {
+    font-size: 4rem;
+    padding: 0px;
+    margin: 0px;
+}
+ion-button{
+    background: $custom-color !important;
+    color: #333 !important;
+    width: 60% !important;
+    --background: $custom-color;
+ }
+ 
+button:disabled {
+    background: rgb(214, 214, 214);
+    cursor: not-allowed;
+}
+ @media screen and (max-width: 900px) {
+     
+    .main h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 80%;
+        margin: 60px auto;
+        text-align: center;
+        color: #fff;
+    }
+
+
+    .main > div.intro, .main > div.details {
+        width: 90%;
+    }
+ }
