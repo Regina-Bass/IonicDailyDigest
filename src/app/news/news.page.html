@@ -10,14 +10,15 @@
 </ion-header>
 
 <ion-content class="main">
-    <ion-card class="newscard">
-      <img class="newsimage" src="../../assets/madison.jpg" />
+    <ion-card class="newscard" *ngFor="let article of data?.articles">
+      <!--<img class="newsimage" src="../../assets/madison.jpg" />-->
+      <img class="newsimage" [src]="article.urlToImage" />
       <ion-card-header>
-        <ion-card-subtitle>Destination</ion-card-subtitle>
-        <ion-card-title>Madison, WI</ion-card-title>
+        <ion-card-subtitle>{{article.author}}</ion-card-subtitle>
+        <ion-card-title>{{article.title}}</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
+        <p>{{article.description}}</p>
       </ion-card-content>
     </ion-card>
 
