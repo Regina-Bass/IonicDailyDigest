@@ -21,14 +21,14 @@
   </form>
   <div class="weather" *ngIf="weather">
       <div>   
-            <img *ngIf="" [src]="weather_icons" alt="Weather Icon" />
-          <p class="big">{{temperature}}°</p>
-          <p><strong>{{weather_descriptions}}</strong></p> 
+            <img *ngIf="weather" [src]="weather.current.weather_icons" alt="Weather Icon" />
+          <p class="big">{{weather.current.temperature}}°</p>
+          <p><strong>{{weather.current.weather_descriptions}}</strong></p> 
       </div>
       <div>
           
-          <p>{{name}}, <span>{{country}}</span> </p>
-          <p>{{localtime}}</p>
+          <p>{{weather.location.name}}, <span>{{weather.location.country}}</span> </p>
+          <p>{{weather.location.localtime}}</p>
       </div>  
   </div>
 </div>

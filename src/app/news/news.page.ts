@@ -8,6 +8,7 @@ import { NewsService } from '../news.service';
 })
 export class NewsPage implements OnInit {
   articles: any;
+  data: any;
 
   constructor(private newsService: NewsService) { }
 
