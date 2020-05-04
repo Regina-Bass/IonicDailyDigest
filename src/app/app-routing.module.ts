@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'side',
     loadChildren: () => import('./side/side.module').then( m => m.SidePageModule)
   },
+  {
+    path: 'news',
+    loadChildren: () => import('./news/news.module').then( m => m.NewsPageModule)
+  },
 ];
 
 @NgModule({
