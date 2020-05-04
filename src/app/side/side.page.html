@@ -17,12 +17,12 @@
   <form [formGroup] ="weatherForm" (ngSubmit)="search(weatherForm.value)">
     <ion-input placeholder="Enter City Name, Ex. Rochester" formControlName="city"></ion-input>
 
-    <button class="checkWeather" type="submit" [disabled]="!weatherForm.valid">Submit</button>
+    <button class="checkButtons" type="submit" [disabled]="!weatherForm.valid">Submit</button>
   </form>
   <div class="weather" *ngIf="weather">
       <div>   
             <img *ngIf="" [src]="weather_icons" alt="Weather Icon" />
-          <p class="big">{{[temperature]}}°</p>
+          <p class="big">{{temperature}}°</p>
           <p><strong>{{weather_descriptions}}</strong></p> 
       </div>
       <div>
