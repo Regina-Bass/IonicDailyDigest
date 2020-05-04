@@ -93,7 +93,7 @@ $custom-color: #7bcdfd;
     padding: 0px;
     margin: 0px;
 }
-.checkWeather {
+.checkButtons {
     padding: 10px;
     display: block;
     color: white;
@@ -101,8 +101,15 @@ $custom-color: #7bcdfd;
     background: #0ab0fd;  /* fallback for old browsers */    
     width: 40%;
     margin: 0 auto;
+    margin-bottom: 4%;
     border-radius: 20px;
     text-align: center;
+}
+
+.newscard{
+    width: 50%;
+    left: 25%;
+    right: auto;
 }
 
 ion-menu-button {
