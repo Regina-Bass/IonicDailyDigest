@@ -17,8 +17,13 @@ export class AppComponent {
     },
     {
       title: 'Conditions',
-      url: '/list',
+      url: '/side',
       icon: 'cloudy-night'
+    },
+    {
+      title: 'News',
+      url: '/news',
+      icon: 'newspaper'
     }
   ];
 
